@@ -1,5 +1,6 @@
 package com.arthur.entities;
 
+import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 
@@ -73,6 +74,7 @@ public class Player extends Entity{
 	
 	public void render(Graphics g) {
 		g.drawImage(MoveSprite[index],this.getX() - Camera.x,this.getY() - Camera.y,null);
+
 	}
 
 	

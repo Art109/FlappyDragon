@@ -116,7 +116,7 @@ public class Game extends Canvas implements Runnable,KeyListener,MouseListener,M
 			return;
 		}
 		Graphics g = image.getGraphics();
-		g.setColor(new Color(0,0,0));
+		g.setColor(new Color(120,210,211));
 		g.fillRect(0, 0,WIDTH,HEIGHT);
 		
 		/*Renderização do jogo*/

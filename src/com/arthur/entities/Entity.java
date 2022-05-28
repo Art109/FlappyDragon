@@ -31,7 +31,7 @@ public class Entity {
 	
 	public boolean debug = false;
 	
-	private BufferedImage sprite;
+	public BufferedImage sprite;
 	
 	public static Random rand = new Random();
 	
@@ -127,7 +127,7 @@ public class Entity {
 	}
 	
 	public static boolean isColidding(Entity e1,Entity e2){
-		Rectangle e1Mask = new Rectangle(e1.getX(),e1.getY(),e1.getWidth(),e1.getHeight());
+		Rectangle e1Mask = new Rectangle(e1.getX(),e1.getY(),e1.getWidth(),e1.getHeight() - 5);
 		Rectangle e2Mask = new Rectangle(e2.getX(),e2.getY(),e2.getWidth(),e2.getHeight());
 		
 		return e1Mask.intersects(e2Mask);

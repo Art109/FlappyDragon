@@ -20,8 +20,8 @@ public class TorreGenerator {
 			time = 0;
 			int altura1 = rand.nextInt(100 - 60) + 60;
 			int altura2 = rand.nextInt(100 - 60) + 80;
-			Torre torre1 = new Torre(Game.WIDTH,0,20,altura1,1,null);		
-			Torre torre2 = new Torre(Game.WIDTH,Game.WIDTH - altura2,20,altura2,1,null);	
+			Torre torre1 = new Torre(Game.WIDTH,0,20,altura1,1,Game.spritesheet.getSprite(17, 16,16,16));		
+			Torre torre2 = new Torre(Game.WIDTH,Game.WIDTH - altura2,20,altura2,1,Game.spritesheet.getSprite(17, 0,16,16));	
 			
 			
 			Game.entities.add(torre1);

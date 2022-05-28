@@ -24,7 +24,12 @@ public class Torre extends Entity {
 	}
 	
 	public void render(Graphics g) {
-		g.setColor(Color.green);
-		g.fillRect((int)x, (int)y, width, height);
+		if(sprite != null) {
+			g.drawImage(sprite, this.getX(), this.getY(), width, height, null);
+		}
+		else {
+			g.setColor(Color.DARK_GRAY);
+			g.fillRect((int)x, (int)y, width, height);
+		}	
 	}
 }
